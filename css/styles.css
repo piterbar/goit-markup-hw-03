@@ -1,3 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -39,6 +82,10 @@ body {
 }
 
 .agencja-button {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,6 +93,10 @@ body {
   color: #212121;
 }
 .portfolio-button {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -54,11 +105,24 @@ body {
 }
 
 .kontakty-button {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact-item {
+  margin-left: 50px;
 }
 
 .button {
@@ -111,9 +175,14 @@ body {
 }
 .footer {
   background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.footer-con {
+  margin-top: 20px;
+}
+
 .address-footer {
   font-style: normal;
   font-weight: 400;
@@ -149,20 +218,99 @@ p {
 }
 
 .main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.main-section-h1 {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
+}
+
+.middle-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.middle-list {
+  display: flex;
+}
+
+.middle-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
+.middle-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.middle-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.work-section {
+  padding-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-title {
+  margin-bottom: 50px;
 }
 
 .team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-whole {
+  padding: 30px 0px;
+}
+
+.team-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-possition {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .button-main {
@@ -172,6 +320,12 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  display: inline-block;
+  min-width: 200px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  align-items: center;
+  text-align: center;
   border-color: #f5f4fa;
   border-style: none;
   background-color: #2196f3;
@@ -198,4 +352,27 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.portfolio-item {
+  margin: 15px;
+}
+.portfolio-trans {
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+  padding: 20px 24px;
 }
